@@ -5,9 +5,9 @@
 저희 프로젝트의 목표는 수학 공식이 적힌 이미지를 LaTeX 문법으로 변환하는 프로젝트 입니다.<br>
 OCR을 거쳐 나온 Latex 문장을 블로그, overleaf, 검색 등 다양하게 이용 가능합니다.<br>
 <br>
-![image](https://github.com/traumasj201/AdapTex/assets/65104209/cb90c285-c96b-4d5f-a7a0-796796ceecdf)<br>
+![img.png](img%2Fimg.png)<br>
 <br>
-![image](https://github.com/traumasj201/AdapTex/assets/126870709/6e6c7b7c-8c1f-45cb-844e-1172e1feaff7)<br>
+![info.png](img%2Finfo.png)<br>
 
 # Model
 
@@ -19,7 +19,7 @@ OCR을 거쳐 나온 Latex 문장을 블로그, overleaf, 검색 등 다양하�
 
 ### Architecture
 - ##### encoder
-![image](https://github.com/traumasj201/AdapTex/assets/29011595/fcb8b311-a897-49a7-a29e-2dc1c385875f)
+![Architecture.png](img%2FArchitecture.png)
 
 
 # Using the demo
