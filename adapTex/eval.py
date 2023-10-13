@@ -121,12 +121,13 @@ if __name__ == '__main__':
     logging.getLogger().setLevel(logging.DEBUG if parsed_args.debug else logging.WARNING)
     seed_everything(args.seed if 'seed' in args else 42)
 
-
-    model = get_model(args)
-    if parsed_args.checkpoint is None:
-        with in_model_path():
-            parsed_args.checkpoint = os.path.realpath('checkpoints/weights.pth')
     args.device = 'cuda' if torch.cuda.is_available() else 'cpu'
+    model = get_model(args)
+    if parsed_args.checkpoint is not None:
+        args.load_chkpt = parsed_args.checkpoint
+    model.load_state_dict(torch.load(args.load_chkpt, args.device))
+
+
 
     model.load_state_dict(torch.load(parsed_args.checkpoint, args.device))
     dataset = Im2LatexDataset().load(parsed_args.data)

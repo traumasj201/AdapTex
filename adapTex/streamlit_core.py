@@ -31,7 +31,9 @@ class Pix2TexModel:
 
             self._is_init = True
             self.model = get_model(self.args)
-            self.model.load_state_dict(torch.load(checkpoint_path, self.args.device))
+            if self.args.load_chkpt is None:
+                self.args.load_chkpt = checkpoint_path
+            self.model.load_state_dict(torch.load(self.args.load_chkpt, self.args.device))
             self.model.eval()
 
             self.tokenizer = PreTrainedTokenizerFast(tokenizer_file=self.args.tokenizer)

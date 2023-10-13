@@ -29,8 +29,9 @@ OCR을 거쳐 나온 Latex 문장을 블로그, overleaf, 검색 등 다양하�
 |af_h_model|True|[google drive](https://drive.google.com/file/d/1MPUeHb5M5aISqpZTPJSW6mrry0hlijWa/view?usp=drive_link)|
 |p_h_model|False|[google drive](https://drive.google.com/file/d/17YWTUHvNi4MFilrKApxd0kHT4Cdq4exf/view?usp=drive_link)|
 
+>모델 경로 설정은 config의 load_chkpt를 설정 해주세요
 
-Streamlit으로 구현된 데모 입니다.
+##### Streamlit으로 구현된 데모 입니다.
 
 누구나 실행해볼 수 있습니다. 아래 절차를 따라주세요.
 

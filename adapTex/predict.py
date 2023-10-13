@@ -109,7 +109,7 @@ def prediction(model, img, args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Test model')
     parser.add_argument('--config', default='./model/setting/config.yaml', help='path to yaml config file', type=str)
-    parser.add_argument('-c', '--checkpoint', default='./model.pth', type=str, help='path to model checkpoint')
+    parser.add_argument('-c', '--checkpoint', default=None, type=str, help='path to model checkpoint')
     parser.add_argument('-t', '--temperature', type=float, default=.333, help='sampling emperature')
     parser.add_argument('-i', '--image', type=str, default='./test2img.png', help='sampling emperature')
     # parser.add_argument('-n', '--tokenizer', type=str, default='./adapTex/model/dataset/tokenizer.json', help='sampling emperature')
@@ -126,7 +126,9 @@ if __name__ == '__main__':
     input_img = preprocessing(input_img)
 
     model = get_model(args)
-    model.load_state_dict(torch.load(parsed_args.checkpoint, args.device))
+    if parsed_args.checkpoint is not None:
+        args.load_chkpt = parsed_args.checkpoint
+    model.load_state_dict(torch.load(args.load_chkpt, args.device))
 
 
     model.eval()
