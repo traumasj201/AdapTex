@@ -8,6 +8,8 @@ OCR을 거쳐 나온 Latex 문장을 블로그, overleaf, 검색 등 다양하�
 ![img.png](img%2Fimg.png)<br>
 <br>
 ![info.png](img%2Finfo.png)<br>
+<br>
+>#### [presentation](https://www.canva.com/design/DAFxJbscnIc/Ok4O_I3J78YH-EfAa2uxqA/edit?utm_content=DAFxJbscnIc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | [paper](https://github.com/traumasj201/AdapTex/blob/main/paper/AdapTex_paper.pdf) |  [poster](https://github.com/traumasj201/AdapTex/blob/main/paper/AdapTex_poster.pdf) |
 
 # Model
 
